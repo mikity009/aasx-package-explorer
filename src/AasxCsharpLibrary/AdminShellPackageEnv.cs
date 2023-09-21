@@ -1497,6 +1497,7 @@ namespace AdminShellNS
                 return null;
 
             // build target path
+            targetDir = targetDir.Replace(@"\", "/"); // 1 line Add : 2023/09/21
             targetDir = targetDir.Trim();
             if (!targetDir.EndsWith("/"))
                 targetDir += "/";
